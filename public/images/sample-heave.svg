@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-labelledby="title-heave desc-heave">
+  <title id="title-heave">Sample floor elevation survey  heave pattern</title>
+  <desc id="desc-heave">Illustrative contour map of a slab showing a high area near the center, typical of heave. Not a real property.</desc>
+
+  <!-- Paper -->
+  <rect width="480" height="360" fill="#faf9f7"/>
+  <rect x="24" y="28" width="432" height="304" fill="#fff" stroke="#d8d4cc" stroke-width="1"/>
+
+  <!-- Title block -->
+  <text x="40" y="52" font-family="Georgia, serif" font-size="13" font-weight="600" fill="#1a1a1a">Sample contour map</text>
+  <text x="40" y="70" font-family="Georgia, serif" font-size="11" fill="#8b4513">Heave pattern (illustrative)</text>
+  <text x="440" y="52" text-anchor="end" font-family="ui-monospace, monospace" font-size="9" fill="#5c5c5c">SAMPLE ONLY</text>
+  <text x="440" y="66" text-anchor="end" font-family="ui-monospace, monospace" font-size="8" fill="#5c5c5c">Not a real property</text>
+
+  <!-- Floor plan outline -->
+  <g transform="translate(56, 88)">
+    <rect x="0" y="0" width="280" height="200" fill="#f7f5f1" stroke="#1a1a1a" stroke-width="1.5"/>
+    <!-- rooms -->
+    <line x1="100" y1="0" x2="100" y2="120" stroke="#d8d4cc" stroke-width="1"/>
+    <line x1="0" y1="120" x2="280" y2="120" stroke="#d8d4cc" stroke-width="1"/>
+    <line x1="180" y1="120" x2="180" y2="200" stroke="#d8d4cc" stroke-width="1"/>
+    <text x="50" y="64" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#9a958c">Living</text>
+    <text x="190" y="64" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#9a958c">Kitchen</text>
+    <text x="90" y="164" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#9a958c">Bed</text>
+    <text x="230" y="164" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#9a958c">Bed</text>
+
+    <!-- Contours: dome / high in center (heave) -->
+    <ellipse cx="140" cy="95" rx="110" ry="70" fill="none" stroke="#c4a484" stroke-width="1" opacity="0.8"/>
+    <ellipse cx="140" cy="95" rx="85" ry="52" fill="none" stroke="#b08968" stroke-width="1.25" opacity="0.85"/>
+    <ellipse cx="140" cy="95" rx="58" ry="36" fill="none" stroke="#8b4513" stroke-width="1.35"/>
+    <ellipse cx="140" cy="95" rx="32" ry="20" fill="#f0e4d4" stroke="#8b4513" stroke-width="1.5"/>
+
+    <!-- Milder outer rings toward edges (relatively lower) -->
+    <path d="M15,30 Q140,18 265,28" fill="none" stroke="#d4c4b0" stroke-width="1" stroke-dasharray="3 2"/>
+    <path d="M20,170 Q140,185 260,168" fill="none" stroke="#c4a484" stroke-width="1"/>
+
+    <!-- Elevation labels -->
+    <text x="28" y="40" font-family="ui-monospace, monospace" font-size="9" fill="#6d3610">0.03</text>
+    <text x="240" y="42" font-family="ui-monospace, monospace" font-size="9" fill="#6d3610">+0.33</text>
+    <text x="50" y="100" font-family="ui-monospace, monospace" font-size="9" fill="#6d3610">+0.63</text>
+    <text x="200" y="100" font-family="ui-monospace, monospace" font-size="9" fill="#6d3610">+0.93</text>
+    <text x="140" y="92" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" font-weight="600" fill="#1a1a1a">+1.53</text>
+    <text x="140" y="118" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" fill="#8b4513">HIGH</text>
+    <text x="140" y="188" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#6d3610">0.13</text>
+
+    <!-- Datum marker -->
+    <circle cx="24" cy="24" r="3" fill="#1a1a1a"/>
+    <text x="32" y="27" font-family="ui-monospace, monospace" font-size="8" fill="#5c5c5c">datum</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(360, 110)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="10" font-weight="600" fill="#1a1a1a">Legend</text>
+    <line x1="0" y1="18" x2="28" y2="18" stroke="#8b4513" stroke-width="1.5"/>
+    <text x="34" y="21" font-family="ui-monospace, monospace" font-size="8" fill="#5c5c5c">contour</text>
+    <rect x="0" y="32" width="28" height="12" fill="#f0e4d4" stroke="#8b4513" stroke-width="1"/>
+    <text x="34" y="42" font-family="ui-monospace, monospace" font-size="8" fill="#5c5c5c">relative high</text>
+    <text x="0" y="68" font-family="Georgia, serif" font-size="9" fill="#5c5c5c">Values vs. datum</text>
+    <text x="0" y="84" font-family="Georgia, serif" font-size="9" fill="#5c5c5c">(inches)</text>
+  </g>
+
+  <text x="40" y="318" font-family="Georgia, serif" font-size="10" fill="#5c5c5c">Pattern often read as heave: floors rise toward a high area (common with expansive clay).</text>
+  <text x="40" y="334" font-family="Georgia, serif" font-size="9" fill="#9a958c">Illustrative only  real homes vary. Not a diagnosis.</text>
+</svg>

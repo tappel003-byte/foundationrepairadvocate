@@ -469,3 +469,56 @@ section h2 {
   padding: 0.65rem 1rem;
   margin-top: 0.5rem;
 }
+
+/* Sample survey maps */
+.survey-samples {
+  margin-top: 2.5rem;
+}
+
+.survey-pair {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  margin: 1.25rem 0;
+}
+
+@media (min-width: 720px) {
+  .survey-pair {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.survey-figure {
+  margin: 0;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.survey-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #faf9f7;
+}
+
+.survey-figure figcaption {
+  padding: 0.85rem 1rem 1rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+}
+
+.survey-figure figcaption strong {
+  color: var(--ink);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+}
+
+.survey-note {
+  font-size: 0.88rem;
+  color: var(--muted);
+  max-width: 48ch;
+  margin: 0.5rem 0 0;
+}

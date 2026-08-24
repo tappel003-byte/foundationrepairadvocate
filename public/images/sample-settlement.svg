@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-labelledby="title-settle desc-settle">
+  <title id="title-settle">Sample floor elevation survey  settlement pattern</title>
+  <desc id="desc-settle">Illustrative contour map of a slab showing a low area toward the rear, typical of settlement. Not a real property.</desc>
+
+  <!-- Paper -->
+  <rect width="480" height="360" fill="#faf9f7"/>
+  <rect x="24" y="28" width="432" height="304" fill="#fff" stroke="#d8d4cc" stroke-width="1"/>
+
+  <!-- Title block -->
+  <text x="40" y="52" font-family="Georgia, serif" font-size="13" font-weight="600" fill="#1a1a1a">Sample contour map</text>
+  <text x="40" y="70" font-family="Georgia, serif" font-size="11" fill="#8b4513">Settlement pattern (illustrative)</text>
+  <text x="440" y="52" text-anchor="end" font-family="ui-monospace, monospace" font-size="9" fill="#5c5c5c">SAMPLE ONLY</text>
+  <text x="440" y="66" text-anchor="end" font-family="ui-monospace, monospace" font-size="8" fill="#5c5c5c">Not a real property</text>
+
+  <!-- Floor plan outline -->
+  <g transform="translate(56, 88)">
+    <rect x="0" y="0" width="280" height="200" fill="#f7f5f1" stroke="#1a1a1a" stroke-width="1.5"/>
+    <!-- rooms -->
+    <line x1="100" y1="0" x2="100" y2="120" stroke="#d8d4cc" stroke-width="1"/>
+    <line x1="0" y1="120" x2="280" y2="120" stroke="#d8d4cc" stroke-width="1"/>
+    <line x1="180" y1="120" x2="180" y2="200" stroke="#d8d4cc" stroke-width="1"/>
+    <text x="50" y="64" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#9a958c">Living</text>
+    <text x="190" y="64" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#9a958c">Kitchen</text>
+    <text x="90" y="164" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#9a958c">Bed</text>
+    <text x="230" y="164" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#9a958c">Bed</text>
+
+    <!-- Contours: dish / low toward rear-center (settlement) -->
+    <!-- Relative elevations in inches from datum at front -->
+    <ellipse cx="150" cy="145" rx="95" ry="55" fill="none" stroke="#5b7c99" stroke-width="1.25" opacity="0.85"/>
+    <ellipse cx="150" cy="150" rx="70" ry="40" fill="none" stroke="#5b7c99" stroke-width="1.25" opacity="0.9"/>
+    <ellipse cx="150" cy="155" rx="45" ry="26" fill="none" stroke="#3d5a73" stroke-width="1.5"/>
+    <ellipse cx="150" cy="158" rx="22" ry="12" fill="#d6e2ec" stroke="#3d5a73" stroke-width="1.5"/>
+
+    <!-- Outer milder contours -->
+    <path d="M20,40 Q150,55 260,35" fill="none" stroke="#a8b8c6" stroke-width="1" stroke-dasharray="3 2"/>
+    <path d="M30,80 Q150,100 250,75" fill="none" stroke="#8aa0b3" stroke-width="1"/>
+
+    <!-- Elevation labels -->
+    <text x="40" y="38" font-family="ui-monospace, monospace" font-size="9" fill="#3d5a73">0.03</text>
+    <text x="230" y="40" font-family="ui-monospace, monospace" font-size="9" fill="#3d5a73">0.23</text>
+    <text x="55" y="95" font-family="ui-monospace, monospace" font-size="9" fill="#3d5a73">0.53</text>
+    <text x="210" y="100" font-family="ui-monospace, monospace" font-size="9" fill="#3d5a73">0.83</text>
+    <text x="150" y="148" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" font-weight="600" fill="#1a1a1a">1.43</text>
+    <text x="150" y="178" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" fill="#3d5a73">LOW</text>
+
+    <!-- Datum marker -->
+    <circle cx="24" cy="24" r="3" fill="#1a1a1a"/>
+    <text x="32" y="27" font-family="ui-monospace, monospace" font-size="8" fill="#5c5c5c">datum</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(360, 110)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="10" font-weight="600" fill="#1a1a1a">Legend</text>
+    <line x1="0" y1="18" x2="28" y2="18" stroke="#3d5a73" stroke-width="1.5"/>
+    <text x="34" y="21" font-family="ui-monospace, monospace" font-size="8" fill="#5c5c5c">contour</text>
+    <rect x="0" y="32" width="28" height="12" fill="#d6e2ec" stroke="#3d5a73" stroke-width="1"/>
+    <text x="34" y="42" font-family="ui-monospace, monospace" font-size="8" fill="#5c5c5c">relative low</text>
+    <text x="0" y="68" font-family="Georgia, serif" font-size="9" fill="#5c5c5c">Values vs. datum</text>
+    <text x="0" y="84" font-family="Georgia, serif" font-size="9" fill="#5c5c5c">(inches)</text>
+  </g>
+
+  <text x="40" y="318" font-family="Georgia, serif" font-size="10" fill="#5c5c5c">Pattern often read as settlement: floors drop toward a low area.</text>
+  <text x="40" y="334" font-family="Georgia, serif" font-size="9" fill="#9a958c">Illustrative only  real homes vary. Not a diagnosis.</text>
+</svg>
