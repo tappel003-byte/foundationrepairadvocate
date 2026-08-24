@@ -66,20 +66,20 @@ img {
   max-width: var(--wide);
   margin: 0 auto;
   padding: 0.85rem 1.25rem;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    'logo phone'
+    'nav nav';
   align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem 1rem;
-  overflow: visible;
+  column-gap: 1rem;
+  row-gap: 0.65rem;
 }
 
-/* Logo wordmark */
 .wordmark {
+  grid-area: logo;
   display: block;
   text-decoration: none;
-  flex-shrink: 0;
-  overflow: visible;
   line-height: 0;
 }
 
@@ -87,24 +87,36 @@ img {
   display: block;
   width: auto;
   height: auto;
-  max-width: min(240px, 58vw);
+  max-width: min(220px, 70vw);
   max-height: 3.25rem;
-  object-fit: contain;
-  object-position: left center;
-}
-
-@media (max-width: 640px) {
-  .logo-img {
-    max-width: min(200px, 52vw);
-    max-height: 2.75rem;
-  }
 }
 
 .nav-links {
+  grid-area: nav;
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem 1.1rem;
   font-size: 0.92rem;
+  width: 100%;
+}
+
+.header-inner .phone-link {
+  grid-area: phone;
+  justify-self: end;
+}
+
+@media (max-width: 640px) {
+  .header-inner {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'logo'
+      'nav';
+  }
+
+  .logo-img {
+    max-width: min(200px, 62vw);
+    max-height: 2.75rem;
+  }
 }
 
 .nav-links a {
@@ -425,21 +437,26 @@ section h2 {
 .footer-inner {
   max-width: var(--wide);
   margin: 0 auto;
-}
-
-.footer-inner p {
-  margin: 0 0 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer-nav {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 1.25rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
 }
 
 .footer-nav a {
   color: var(--muted);
+}
+
+.footer-inner p {
+  margin: 0 0 0.5rem;
+  max-width: 52ch;
 }
 
 .footer-contact {
