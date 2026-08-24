@@ -1,0 +1,148 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Logo comparison"
+  description="Compare left-aligned and centered Foundation Repair Advocate logo lockups."
+>
+  <div class="container-wide logo-preview-page">
+    <h1 class="page-title">Logo comparison</h1>
+    <p class="lead">
+      Same wordmark, two alignments. Pick what feels right — we’ll set the header to match.
+    </p>
+
+    <div class="logo-compare-grid">
+      <section class="logo-compare-card">
+        <h2>Left-aligned</h2>
+        <p class="logo-compare-note">Current header. Lines up with nav links on the left.</p>
+        <div class="logo-compare-stage logo-compare-stage--left">
+          <img src="/logo.svg" alt="Foundation Repair Advocate — left-aligned logo" width="248" height="72" />
+        </div>
+        <div class="logo-compare-mock-header">
+          <img src="/logo.svg" alt="" width="180" height="52" class="logo-compare-mock-logo" />
+          <div class="logo-compare-mock-nav">
+            <span>What you get</span>
+            <span>Why hire us</span>
+            <span>Contact</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="logo-compare-card">
+        <h2>Centered</h2>
+        <p class="logo-compare-note">Balanced lockup. Works well as a standalone mark or centered header.</p>
+        <div class="logo-compare-stage logo-compare-stage--center">
+          <img src="/logo-centered.svg" alt="Foundation Repair Advocate — centered logo" width="320" height="80" />
+        </div>
+        <div class="logo-compare-mock-header logo-compare-mock-header--center">
+          <img src="/logo-centered.svg" alt="" width="200" height="50" class="logo-compare-mock-logo logo-compare-mock-logo--center" />
+          <div class="logo-compare-mock-nav logo-compare-mock-nav--center">
+            <span>What you get</span>
+            <span>Why hire us</span>
+            <span>Contact</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <p style="margin-top: 2rem;">
+      <a href="/">← Back to home</a>
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .logo-preview-page {
+    padding-bottom: 3rem;
+  }
+
+  .logo-compare-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    margin-top: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .logo-compare-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .logo-compare-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 1.25rem 1.35rem;
+  }
+
+  .logo-compare-card h2 {
+    margin: 0 0 0.35rem;
+    font-size: 1.2rem;
+  }
+
+  .logo-compare-note {
+    margin: 0 0 1rem;
+    font-size: 0.92rem;
+    color: var(--muted);
+  }
+
+  .logo-compare-stage {
+    background: #faf9f7;
+    border: 1px dashed var(--line);
+    border-radius: 4px;
+    padding: 1.25rem 1rem;
+    margin-bottom: 1rem;
+    min-height: 6rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-compare-stage--left {
+    justify-content: flex-start;
+  }
+
+  .logo-compare-stage--center {
+    justify-content: center;
+  }
+
+  .logo-compare-stage img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .logo-compare-mock-header {
+    border-top: 1px solid var(--line);
+    padding-top: 1rem;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+
+  .logo-compare-mock-header--center {
+    text-align: center;
+  }
+
+  .logo-compare-mock-logo {
+    display: block;
+    margin-bottom: 0.65rem;
+  }
+
+  .logo-compare-mock-logo--center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo-compare-mock-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    font-family: 'Source Serif 4', Georgia, serif;
+    color: var(--ink);
+  }
+
+  .logo-compare-mock-nav--center {
+    justify-content: center;
+  }
+</style>
