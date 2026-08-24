@@ -1,12 +1,14 @@
 ---
-import { NAV, PHONE, PHONE_TEL, SITE_NAME, TAGLINE } from '../lib/site.ts';
+import { NAV, PHONE, PHONE_TEL, LOGO_TAGLINE } from '../lib/site.ts';
 ---
 
 <header class="site-header">
   <div class="header-inner">
-    <a href="/" class="logo">
-      {SITE_NAME}
-      <span>{TAGLINE}</span>
+    <a href="/" class="wordmark" aria-label="Foundation Repair Advocate — home">
+      <span class="wordmark-top">Foundation Repair</span>
+      <span class="wordmark-main">Advocate</span>
+      <span class="wordmark-rule" aria-hidden="true"></span>
+      <span class="wordmark-tagline">{LOGO_TAGLINE}</span>
     </a>
     <nav class="nav-links" aria-label="Main">
       {NAV.map((item) => (
