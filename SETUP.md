@@ -39,13 +39,9 @@ Wait a few minutes, then visit https://foundationrepairadvocate.com
 
 The number on the site lives in **one file**: `src/lib/site.ts` (`PHONE` and `PHONE_TEL`). Change it there, commit, push — Pages redeploys automatically.
 
-**Quo (~$19/mo after trial)**  
-Pros: business voicemail, texting, call recording, dedicated 928 line.  
-Cons: costs money before you have revenue.
+**Quo (~$19/mo after trial)** — optional if you want CNAM/business caller ID later.
 
-**Google Voice (free)**  
-Pros: free, forwards to your cell, fine for testing the business.  
-Cons: you may not get a 928 number; less “business phone” polish; no Quo-style CRM.
+**Google Voice (free)** — current number **(928) 298-5756**. Forwards to your cell. See below for caller ID limits.
 
 You don’t need to settle this before launch. Pick whichever number you’ll actually answer for the next 30 days, put it in `site.ts`, and go live. Swapping later is a 2-minute edit.
 

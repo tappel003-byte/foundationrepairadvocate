@@ -2,6 +2,7 @@
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import CallBar from '../components/CallBar.astro';
+import { PHONE_TEL } from '../lib/site.ts';
 import '../styles/fra.css';
 
 interface Props {
@@ -43,7 +44,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, ''
       name: 'Foundation Repair Advocate',
       description: description || 'Independent foundation second opinions and floor elevation surveys in Arizona.',
       areaServed: { '@type': 'State', name: 'Arizona' },
-      telephone: '+1-928-251-2608',
+      telephone: PHONE_TEL,
       url: 'https://foundationrepairadvocate.com',
     })} />
   </head>
