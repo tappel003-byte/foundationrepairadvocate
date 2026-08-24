@@ -1,3 +1,4 @@
+/** Single place to change the public phone number sitewide. */
 export const PHONE = '(928) 251-2608';
 export const PHONE_TEL = '+19282512608';
 export const PHONE_DISPLAY = '(928) 251-2608';
