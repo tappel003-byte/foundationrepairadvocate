@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { PHONE, PHONE_TEL } from '../../lib/site.ts';
+---
+
+<BaseLayout
+  title="How it works"
+  description="How Foundation Repair Advocate works: floor plan scan, scheduled visit, Pro Level survey, written report, optional 12-month resurvey — Arizona."
+>
+  <div class="container">
+    <h1 class="page-title">How it works</h1>
+    <p class="lead">Simple process. No pressure. You know the fee before we drive.</p>
+
+    <ol class="steps">
+      <li>
+        <strong>Call or text</strong>
+        Tell us what you're seeing — cracks, doors, an estimate you don't trust, or just worry.
+        We'll decide if a survey makes sense and quote the visit.
+      </li>
+      <li>
+        <strong>Floor plan before we arrive</strong>
+        We send simple instructions for a phone-based floor plan scan (CubiCasa or similar). You walk
+        the house once; we import the plan so Distress and elevation work align on site.
+      </li>
+      <li>
+        <strong>On-site visit</strong>
+        Pro Level survey of accessible floors, walkthrough, photos as needed, and a straight
+        conversation — usually a few hours on site depending on size.
+      </li>
+      <li>
+        <strong>Report &amp; watch list</strong>
+        Contour map, plain-language summary, what to monitor, and questions for any repair
+        contractors you invite later. Delivered quickly — often within days.
+      </li>
+      <li>
+        <strong>Optional: resurvey in ~12 months</strong>
+        If we recommend monitoring, we can return and compare — movement documented, not guessed.
+      </li>
+    </ol>
+
+    <section>
+      <h2>Already have paperwork?</h2>
+      <p>
+        Bring the other company's estimate, floor survey, or photos. Second-opinion reviews start
+        from what you already paid for — we add independent measurement and context.
+      </p>
+    </section>
+
+    <section>
+      <h2>During repair (optional)</h2>
+      <p>
+        Some homeowners want an advocate on site while piers go in — not to direct the crew, but to
+        ask questions, compare work to the bid, and keep paperwork straight. Ask us if that's
+        appropriate for your job.
+      </p>
+    </section>
+
+    <div class="contact-box">
+      <p><strong>Start here:</strong></p>
+      <a class="phone-link" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+    </div>
+  </div>
+</BaseLayout>

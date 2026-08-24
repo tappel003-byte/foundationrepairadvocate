@@ -1,0 +1,18 @@
+---
+import { NAV, PHONE, PHONE_TEL, SITE_NAME, TAGLINE } from '../lib/site.ts';
+---
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo">
+      {SITE_NAME}
+      <span>{TAGLINE}</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      {NAV.map((item) => (
+        <a href={item.href}>{item.label}</a>
+      ))}
+    </nav>
+    <a class="phone-link" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+  </div>
+</header>

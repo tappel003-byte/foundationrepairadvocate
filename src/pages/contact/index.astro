@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { PHONE, PHONE_TEL } from '../../lib/site.ts';
+---
+
+<BaseLayout
+  title="Contact"
+  description="Contact Foundation Repair Advocate for independent foundation second opinions and floor elevation surveys in Arizona. Call or text (928) 251-2608."
+>
+  <div class="container">
+    <h1 class="page-title">Contact</h1>
+    <p class="lead">
+      The fastest way to start is a phone call. Tell us what you're seeing — we'll tell you if a
+      survey makes sense and what it costs.
+    </p>
+
+    <div class="contact-box">
+      <p><strong>Call or text</strong></p>
+      <a class="phone-link" href={`tel:${PHONE_TEL}`}>(928) 251-2608</a>
+      <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--muted);">
+        You'll reach someone who can discuss your situation — not a call center.
+      </p>
+    </div>
+
+    <section>
+      <h2>Before you call — helpful details</h2>
+      <ul class="check-list">
+        <li>Property address</li>
+        <li>What symptoms you notice (cracks, doors, slopes)</li>
+        <li>Whether you already have a repair estimate or floor survey</li>
+        <li>Whether you're in Show Low / White Mountains or elsewhere in Arizona</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What happens next</h2>
+      <p>
+        If we agree a visit makes sense, we'll quote the fee, send floor-plan scan instructions, and
+        schedule. No obligation until you say yes.
+      </p>
+      <p>
+        <a href="/how-it-works/">Read how it works →</a>
+      </p>
+    </section>
+  </div>
+</BaseLayout>

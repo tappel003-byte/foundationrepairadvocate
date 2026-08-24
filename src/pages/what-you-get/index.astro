@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { PHONE, PHONE_TEL } from '../../lib/site.ts';
+---
+
+<BaseLayout
+  title="What you get"
+  description="Independent Pro Level floor elevation survey, on-site walkthrough, written guidance, and questions to ask repair contractors — Arizona Foundation Repair Advocate."
+>
+  <div class="container">
+    <h1 class="page-title">What you get</h1>
+    <p class="lead">
+      A paid visit built around information — not a path to a pier contract.
+    </p>
+
+    <section>
+      <h2>On every survey visit</h2>
+      <ul class="check-list">
+        <li>Pro Level floor elevation survey of accessible living levels (slab-on-grade and main floors)</li>
+        <li>Topographic contour map showing high and low areas</li>
+        <li>On-site walkthrough — cracks, doors, drainage, context</li>
+        <li>Plain-language discussion: settlement vs heave patterns, what the numbers suggest</li>
+        <li>Written summary and watch list for the next 12 months</li>
+        <li>Questions to ask foundation repair contractors when they come out</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Second opinion add-on</h2>
+      <p>
+        If you already have another company's floor survey, estimate, or engineer's letter, bring
+        it. We'll read pier count, methods, and pricing against what we measure — line by line when
+        it matters.
+      </p>
+      <div class="callout">
+        <p>
+          A floor survey from a repair company isn't wrong because of the instrument. It's limited
+          because their business model still depends on finding work. Independence is the product.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>What we don't do</h2>
+      <ul class="check-list">
+        <li>Sell helical piers, push piers, foam, or any repair package</li>
+        <li>Offer "free" inspections that convert to a sales visit</li>
+        <li>Provide stamped Arizona engineering reports (we'll tell you when you need a PE)</li>
+        <li>Direct means and methods during someone else's repair (we can advise you and ask questions)</li>
+        <li>Crawl every crawlspace — limited crawlspace work by design; slabs and accessible floors are our focus</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Typical investment</h2>
+      <p>
+        Independent floor-level surveys in northern and central Arizona typically run
+        <strong>$1,000–$1,250</strong> depending on size and travel. You'll know the fee before we
+        schedule. No surprise upsells.
+      </p>
+      <a class="btn btn-primary" href={`tel:${PHONE_TEL}`} style="margin-top: 0.5rem;">Call to schedule — {PHONE}</a>
+    </section>
+  </div>
+</BaseLayout>

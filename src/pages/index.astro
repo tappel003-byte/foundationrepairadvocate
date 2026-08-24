@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { PHONE, PHONE_TEL } from '../lib/site.ts';
+---
+
+<BaseLayout
+  title="Foundation Repair Advocate — Arizona second opinions & floor surveys"
+  description="Paid independent foundation second opinions and Pro Level floor elevation surveys in Arizona. Complete the picture before you sign a repair contract. White Mountains, Show Low, and statewide."
+>
+  <div class="hero">
+    <h1>The rest of the story.</h1>
+    <p class="hero-lead">
+      Independent floor elevation surveys and foundation second opinions for Arizona homeowners —
+      paid, practical, and on your side of the table.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href={`tel:${PHONE_TEL}`}>Call {PHONE}</a>
+      <a class="btn btn-secondary" href="/how-it-works/">How it works</a>
+    </div>
+    <p class="hero-note">
+      Not a free sales inspection. Not a pier company. You pay for clarity — including when the
+      honest answer is <em>wait and monitor</em>.
+    </p>
+  </div>
+
+  <div class="container-wide">
+    <section>
+      <h2>What most homeowners never hear</h2>
+      <p class="lead">
+        The foundation repair industry often stops at the symptom. You get a crack, a scary bid, and
+        pressure to sign. Nobody completes the picture: what the floors actually show, what you can
+        watch for, what risk looks like if you wait, and when repair is genuinely warranted.
+      </p>
+      <div class="callout">
+        <p>
+          <strong>You can absolutely fix it — you don't have to right now.</strong> That sentence
+          rarely gets said in a living room. It's the reason this service exists.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>What we do</h2>
+      <div class="card-grid three">
+        <div class="card">
+          <h3>Pro Level floor survey</h3>
+          <p>
+            Professional optical leveling — not a sales-demo gadget. Contour map of your living
+            levels and plain-language read of what it likely means.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Second opinion on bids</h3>
+          <p>
+            Already have a survey or a scary estimate? We review pier count, methods, and language
+            against measured data — and ask the questions sales visits skip.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Monitor &amp; resurvey</h3>
+          <p>
+            When movement is real but not urgent, we document a baseline and what to watch for over
+            the next year — then compare again if needed.
+          </p>
+        </div>
+      </div>
+      <p style="margin-top: 1.25rem;">
+        <a href="/what-you-get/">See everything included →</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Who this is for</h2>
+      <ul class="check-list">
+        <li>You got a foundation repair estimate and something feels off</li>
+        <li>You want measurement before anyone sells you piers</li>
+        <li>You already paid for a floor survey from a repair company and want an independent read</li>
+        <li>You're in Show Low, the White Mountains, or anywhere in Arizona and want a straight answer</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ready when you are</h2>
+      <p>
+        Surveys are scheduled by phone. We'll walk you through a simple floor-plan scan before your
+        visit so we're ready to measure when we arrive.
+      </p>
+      <div class="hero-actions" style="margin-top: 1rem;">
+        <a class="btn btn-primary" href={`tel:${PHONE_TEL}`}>Call or text {PHONE}</a>
+        <a class="btn btn-secondary" href="/contact/">Contact</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

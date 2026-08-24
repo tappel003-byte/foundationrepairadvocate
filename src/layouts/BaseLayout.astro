@@ -1,0 +1,58 @@
+---
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import CallBar from '../components/CallBar.astro';
+import '../styles/fra.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = '' } = Astro.props;
+const fullTitle = title.includes('Foundation Repair Advocate')
+  ? title
+  : `${title} — Foundation Repair Advocate`;
+const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, '') || 'https://foundationrepairadvocate.com';
+---
+
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{fullTitle}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Playfair+Display:wght@600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <meta property="og:site_name" content="Foundation Repair Advocate" />
+    <meta property="og:title" content={fullTitle} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'ProfessionalService',
+      name: 'Foundation Repair Advocate',
+      description: description || 'Independent foundation second opinions and floor elevation surveys in Arizona.',
+      areaServed: { '@type': 'State', name: 'Arizona' },
+      telephone: '+1-928-251-2608',
+      url: 'https://foundationrepairadvocate.com',
+    })} />
+  </head>
+  <body>
+    <SiteHeader />
+    <main>
+      <slot />
+    </main>
+    <SiteFooter />
+    <CallBar />
+  </body>
+</html>

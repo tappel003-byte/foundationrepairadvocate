@@ -1,0 +1,26 @@
+---
+import { NAV, PHONE, PHONE_TEL } from '../lib/site.ts';
+---
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="/">Home</a>
+      {NAV.map((item) => (
+        <a href={item.href}>{item.label}</a>
+      ))}
+    </nav>
+    <p>
+      <a class="phone-link" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+      — Call or text
+    </p>
+    <p class="disclaimer">
+      Foundation Repair Advocate provides independent floor elevation surveys and practical second
+      opinions for Arizona homeowners. We are not a foundation repair contractor, not a home
+      inspection company, and not a licensed Arizona engineering firm. We do not sell piers or
+      structural repair. When stamped engineering or repair is appropriate, we will say so and
+      help you understand your options.
+    </p>
+    <p>© {new Date().getFullYear()} Foundation Repair Advocate. All rights reserved.</p>
+  </div>
+</footer>

@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { PHONE, PHONE_TEL } from '../../lib/site.ts';
+---
+
+<BaseLayout
+  title="Service area"
+  description="Foundation Repair Advocate serves Arizona — Show Low, White Mountains, Pinetop, Payson, Flagstaff, and Phoenix metro by appointment."
+>
+  <div class="container">
+    <h1 class="page-title">Service area</h1>
+    <p class="lead">
+      Based in northern Arizona (928). We serve homeowners statewide by scheduled appointment.
+    </p>
+
+    <section>
+      <h2>White Mountains &amp; northern AZ</h2>
+      <p>
+        Our home turf — where geotech coverage is thin and repair sales visits are common from the
+        Valley:
+      </p>
+      <ul class="check-list">
+        <li>Show Low, Pinetop-Lakeside, Snowflake, Taylor</li>
+        <li>Heber, Overgaard, Holbrook, Winslow</li>
+        <li>Payson, Flagstaff, Prescott area (by schedule)</li>
+      </ul>
+      <p>
+        Batch scheduling makes sense here — we can coordinate multiple surveys in one trip when
+        demand allows.
+      </p>
+    </section>
+
+    <section>
+      <h2>Phoenix metro &amp; southern AZ</h2>
+      <p>
+        Greater Phoenix, Tucson, and surrounding communities — by appointment. Higher horizontal
+        competition means second opinions matter even more; we travel when the job warrants it.
+      </p>
+      <p>
+        <em>Phoenix-area line coming when volume supports it. For now, call — we'll be straight
+        about travel and timing.</em>
+      </p>
+    </section>
+
+    <section>
+      <h2>Call or text</h2>
+      <div class="contact-box">
+        <p>Northern Arizona:</p>
+        <a class="phone-link" href={`tel:${PHONE_TEL}`}>(928) 251-2608</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
