@@ -12,7 +12,7 @@ I understand that Foundation Repair Advocate ("FRA") provides independent floor 
 **FRA provides:**
 - Floor elevation survey and accessible observation
 - Experience-based discussion using forensic field techniques
-- An informational **first step** before (or instead of) a full geotechnical / structural investigation
+- An informational **first step** — a non-destructive first look with known limits — before (or instead of) a full geotechnical / structural investigation
 
 **FRA does not:**
 - Provide stamped Arizona professional engineering (PE) reports or designs
