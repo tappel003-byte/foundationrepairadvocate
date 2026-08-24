@@ -65,15 +65,15 @@ img {
 .header-inner {
   max-width: var(--wide);
   margin: 0 auto;
-  padding: 0.85rem 1.25rem;
+  padding: 0.85rem 1.25rem 0.75rem;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr auto 1fr;
   grid-template-areas:
-    'logo phone'
-    'nav nav';
+    '. logo phone'
+    'nav nav nav';
   align-items: center;
   column-gap: 1rem;
-  row-gap: 0.65rem;
+  row-gap: 0.55rem;
 }
 
 .wordmark {
@@ -81,20 +81,22 @@ img {
   display: block;
   text-decoration: none;
   line-height: 0;
+  justify-self: center;
 }
 
 .logo-img {
   display: block;
   width: auto;
   height: auto;
-  max-width: min(220px, 70vw);
-  max-height: 3.25rem;
+  max-width: min(300px, 88vw);
+  max-height: 3.75rem;
 }
 
 .nav-links {
   grid-area: nav;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.35rem 1.1rem;
   font-size: 0.92rem;
   width: 100%;
@@ -103,6 +105,7 @@ img {
 .header-inner .phone-link {
   grid-area: phone;
   justify-self: end;
+  align-self: start;
 }
 
 @media (max-width: 640px) {
@@ -111,11 +114,12 @@ img {
     grid-template-areas:
       'logo'
       'nav';
+    padding-top: 0.75rem;
   }
 
   .logo-img {
-    max-width: min(200px, 62vw);
-    max-height: 2.75rem;
+    max-width: min(280px, 86vw);
+    max-height: 3.35rem;
   }
 }
 
