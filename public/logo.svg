@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" role="img" aria-labelledby="fra-logo-title">
+  <title id="fra-logo-title">Foundation Repair Advocate</title>
+  <text
+    x="160"
+    y="22"
+    text-anchor="middle"
+    font-family="'Playfair Display', Georgia, 'Times New Roman', serif"
+    font-size="14"
+    font-weight="600"
+    fill="#1a1a1a"
+  >Foundation Repair</text>
+  <text
+    x="160"
+    y="62"
+    text-anchor="middle"
+    font-family="'Playfair Display', Georgia, 'Times New Roman', serif"
+    font-size="34"
+    font-weight="700"
+    letter-spacing="0.12em"
+    fill="#1a1a1a"
+  >ADVOCATE</text>
+</svg>
