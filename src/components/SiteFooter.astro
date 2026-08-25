@@ -4,23 +4,30 @@ import { NAV, PHONE, PHONE_TEL } from '../lib/site.ts';
 
 <footer class="site-footer">
   <div class="footer-inner">
+    <a href="/" class="footer-brand" aria-label="Foundation Repair Advocate — home">
+      <span class="footer-brand-small">Foundation Repair</span>
+      <span class="footer-brand-large">ADVOCATE</span>
+    </a>
+
     <nav class="footer-nav" aria-label="Footer">
       <a href="/">Home</a>
       {NAV.map((item) => (
         <a href={item.href}>{item.label}</a>
       ))}
     </nav>
-    <p class="footer-contact">
-      <a class="footer-phone" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
-      <span> — call or text</span>
-    </p>
+
+    <a class="footer-phone" href={`tel:${PHONE_TEL}`}>
+      {PHONE}
+      <span class="footer-phone-note">Call or text</span>
+    </a>
+
     <p class="disclaimer">
-      Foundation Repair Advocate provides independent floor elevation surveys and practical second
-      opinions for Arizona homeowners. We are not a foundation repair contractor, not a home
-      inspection company, and not a licensed Arizona engineering firm. We do not sell piers or
-      structural repair. See our full
-      <a href="/disclosure/">scope &amp; disclosure</a>.
+      Independent floor elevation surveys and second opinions for Arizona homeowners.
+      Not a repair contractor, home inspection company, or licensed engineering firm.
+      We do not sell piers.
+      <a href="/disclosure/">Scope &amp; disclosure</a>
     </p>
-    <p>© {new Date().getFullYear()} Foundation Repair Advocate. All rights reserved.</p>
+
+    <p class="footer-copy">© {new Date().getFullYear()} Foundation Repair Advocate</p>
   </div>
 </footer>
