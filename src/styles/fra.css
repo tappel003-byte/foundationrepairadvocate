@@ -52,97 +52,51 @@ img {
   height: auto;
 }
 
-/* Header — single row: logo | nav | phone */
+/* Header — centered logo, nav underneath */
 .site-header {
   border-bottom: 1px solid var(--line);
   background: var(--card);
   position: sticky;
   top: 0;
   z-index: 100;
-  overflow: visible;
 }
 
-.header-inner {
+.header-inner--stacked {
   max-width: var(--wide);
   margin: 0 auto;
-  padding: 0.7rem 1.25rem;
+  padding: 1.5rem 1.5rem 1.15rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  gap: 0.65rem 1.25rem;
+  gap: 1.15rem;
 }
 
 .logo {
   text-decoration: none;
-  color: var(--ink);
   display: block;
-  flex-shrink: 0;
+  line-height: 0;
 }
 
-.logo:hover {
-  color: var(--ink);
+.logo-img {
+  display: block;
+  width: 300px;
+  max-width: 78vw;
+  height: auto;
 }
 
-.masthead {
+.header-bottom {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  text-align: center;
-  min-width: 14rem;
-}
-
-.masthead-top,
-.masthead-main,
-.masthead-bottom {
-  display: block;
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  text-transform: uppercase;
-  color: inherit;
-  line-height: 1;
-}
-
-.masthead-top {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.28em;
-  padding-left: 0.28em; /* optical balance for letter-spacing */
-}
-
-.masthead-main {
-  font-size: clamp(2rem, 4.2vw, 2.55rem);
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  padding-left: 0.06em;
-  line-height: 0.95;
-}
-
-.masthead-bottom {
-  font-size: 0.62rem;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  padding-left: 0.22em;
-}
-
-.masthead-rule {
-  display: block;
+  justify-content: center;
+  gap: 0.75rem 1.5rem;
   width: 100%;
-  max-width: 15.5rem;
-  height: 0;
-  margin: 0.42rem 0;
-  border: 0;
-  border-top: 2px solid var(--ink);
-}
-
-.masthead-rule--accent {
-  border-top-color: var(--accent);
-  border-top-width: 2.5px;
-  margin-top: 0.48rem;
-  margin-bottom: 0.45rem;
 }
 
 .nav-links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.4rem 1.25rem;
   font-size: 0.95rem;
 }
@@ -173,6 +127,46 @@ img {
 .phone-link:hover {
   background: var(--accent-dark);
   color: var(--phone-text) !important;
+}
+
+/* Mobile call bar */
+.call-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background: var(--phone-bg);
+  padding: 0.7rem 1rem;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.call-bar a {
+  color: var(--phone-text);
+  text-decoration: none;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .call-bar {
+    display: block;
+  }
+  body {
+    padding-bottom: 3.4rem;
+  }
+  .header-inner--stacked {
+    padding: 1.25rem 1.15rem 1rem;
+    gap: 1rem;
+  }
+  .logo-img {
+    width: 240px;
+  }
+  .header-bottom .phone-link {
+    display: none;
+  }
 }
 
 /* Mobile call bar */
