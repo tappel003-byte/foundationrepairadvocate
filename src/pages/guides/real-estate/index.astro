@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { PHONE, PHONE_TEL } from '../../../lib/site.ts';
+---
+
+<BaseLayout
+  title="Foundation concerns before listing or during the inspection period"
+  description="Independent foundation measurement for Arizona real estate transactions — before listing or during the buyer’s inspection period. Not a formal real-estate inspection."
+>
+  <div class="container">
+    <h1 class="page-title">Foundation concerns before listing or during the inspection period</h1>
+    <p class="lead">
+      Foundation issues surface at two high-stakes moments in a real estate transaction: before the house is listed, and during the buyer’s inspection period.
+    </p>
+
+    <section>
+      <h2>Before listing</h2>
+      <p>
+        A clear independent read helps a seller decide whether to repair, disclose and price accordingly, or simply document the condition. Surprises after the listing goes live are more expensive.
+      </p>
+    </section>
+
+    <section>
+      <h2>During the inspection period</h2>
+      <p>
+        A second opinion can keep a deal from collapsing under a large repair bid that no one fully understands. The goal is not to kill the transaction or to force a repair. It is to replace fear with measured information so both sides can decide on facts.
+      </p>
+    </section>
+
+    <section>
+      <h2>What this is (and is not)</h2>
+      <p>
+        This is not a formal real-estate inspection product. It is a practical conversation and measurement when foundation concerns appear. Realtors in the White Mountains and across Arizona use it as a low-drama resource for clients who need clarity without another sales process.
+      </p>
+      <div class="contact-box">
+        <p><strong>Realtors and homeowners — call or text</strong></p>
+        <a class="phone-link" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
