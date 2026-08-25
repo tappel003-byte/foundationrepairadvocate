@@ -1,71 +1,62 @@
-# Foundation Repair Advocate — Go-live checklist
+# Foundation Repair Advocate — Go live (≈10 minutes)
 
-Domain **foundationrepairadvocate.com** is on Cloudflare. Phone **(928) 251-2608** is on Quo (OpenPhone).
+Domain **foundationrepairadvocate.com** is on Cloudflare. Code is on GitHub: https://github.com/tappel003-byte/foundationrepairadvocate
 
-## 1. GitHub
+## Step 1 — Cloudflare Pages (do this first)
 
-Repo: https://github.com/tappel003-byte/foundationrepairadvocate
+1. Open [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → **Create**
+2. Choose **Pages** → **Connect to Git** → authorize GitHub if needed
+3. Select repo **`foundationrepairadvocate`**
+4. Build settings:
 
-Push from local:
+   | Setting | Value |
+   |---------|--------|
+   | Production branch | `main` |
+   | Framework preset | Astro (or None) |
+   | Build command | `npm run build` |
+   | Build output directory | `dist` |
+   | Environment variable | `NODE_VERSION` = `22` |
 
-```bash
-git push -u origin main
-```
+5. Click **Save and Deploy**. First build takes ~1–2 minutes.
+6. You’ll get a `*.pages.dev` URL — open it and confirm the site looks right.
 
-## 2. Cloudflare Pages (recommended)
+## Step 2 — Custom domain
 
-1. [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → **Create**
-2. **Pages** → **Connect to Git** → select `foundationrepairadvocate`
-3. Build settings:
-   - Framework preset: **Astro** (or None)
-   - Build command: `npm run build`
-   - Build output: `dist`
-   - Node version: **22**
-4. Deploy. First build should produce 6 pages + sitemap.
+1. In the Pages project → **Custom domains** → **Set up a custom domain**
+2. Add `foundationrepairadvocate.com`
+3. Add `www.foundationrepairadvocate.com` (optional)
+4. Cloudflare adds DNS automatically since the domain is already in your account.
 
-## 3. Custom domain
+Wait a few minutes, then visit https://foundationrepairadvocate.com
 
-Because the domain is already in the same Cloudflare account:
+## Step 3 — Search Console (when live)
 
-1. Pages project → **Custom domains** → **Set up a domain**
-2. Enter `foundationrepairadvocate.com` and `www.foundationrepairadvocate.com`
-3. Cloudflare creates DNS records automatically.
+1. [Google Search Console](https://search.google.com/search-console) → add property
+2. Verify via DNS TXT record in Cloudflare (easiest)
+3. Submit sitemap: `https://foundationrepairadvocate.com/sitemap-index.xml`
 
-If using Workers instead of Pages, add a route or custom domain on the Worker after `npm run deploy`.
+## Phone number — Quo vs Google Voice
 
-## 4. SSL & redirects
+The number on the site lives in **one file**: `src/lib/site.ts` (`PHONE` and `PHONE_TEL`). Change it there, commit, push — Pages redeploys automatically.
 
-- Force HTTPS (Cloudflare default)
-- Optional: redirect `www` → apex in **Rules** → **Redirect rules**
+**Quo (~$19/mo after trial)** — optional if you want CNAM/business caller ID later.
 
-## 5. Google Search Console
+**Google Voice (free)** — current number **(928) 298-5756**. Forwards to your cell. See below for caller ID limits.
 
-1. [search.google.com/search-console](https://search.google.com/search-console)
-2. Add property: `https://foundationrepairadvocate.com`
-3. Verify via DNS TXT (Cloudflare) or HTML tag
-4. Submit sitemap: `https://foundationrepairadvocate.com/sitemap-index.xml`
-5. Request indexing on `/` and `/contact/` first
+You don’t need to settle this before launch. Pick whichever number you’ll actually answer for the next 30 days, put it in `site.ts`, and go live. Swapping later is a 2-minute edit.
 
-## 6. Quo / phone
-
-Confirm Quo forwards to your mobile and voicemail greeting mentions Foundation Repair Advocate (not TLS, not MFRC).
-
-## 7. What this site is not
-
-- No links to MFRC, TLS Foundations, or Sandia GEO
-- No pier sales CTAs
-- Footer disclaimer covers contractor / HI / PE scope
+During Quo’s 7-day trial: use it or cancel before billing. No need to keep paying $20/mo while you’re still testing whether calls come in.
 
 ## Local preview
 
 ```bash
-cd fra
 npm install
-npm run dev
+npm run dev          # http://localhost:4321
+npm run build        # production build → dist/
 ```
 
-Production preview after build:
+## What this site is not
 
-```bash
-npm run build && npm run preview
-```
+- No links to MFRC, TLS Foundations, or Sandia GEO
+- No pier sales CTAs
+- Footer disclaimer covers contractor / HI / PE scope

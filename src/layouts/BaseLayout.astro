@@ -2,6 +2,7 @@
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import CallBar from '../components/CallBar.astro';
+import { PHONE_TEL } from '../lib/site.ts';
 import '../styles/fra.css';
 
 interface Props {
@@ -29,7 +30,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, ''
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Playfair+Display:wght@600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Playfair+Display:wght@600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap"
       rel="stylesheet"
     />
     <meta property="og:site_name" content="Foundation Repair Advocate" />
@@ -43,7 +44,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, ''
       name: 'Foundation Repair Advocate',
       description: description || 'Independent foundation second opinions and floor elevation surveys in Arizona.',
       areaServed: { '@type': 'State', name: 'Arizona' },
-      telephone: '+1-928-251-2608',
+      telephone: PHONE_TEL,
       url: 'https://foundationrepairadvocate.com',
     })} />
   </head>
