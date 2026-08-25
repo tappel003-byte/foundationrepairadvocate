@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { PHONE, PHONE_TEL } from '../../../lib/site.ts';
+---
+
+<BaseLayout
+  title="What a floor elevation survey shows (and what it doesn’t)"
+  description="A floor elevation survey produces a contour map of your living floors. Here’s what the numbers actually mean in Arizona — and what they cannot tell you by themselves."
+>
+  <div class="container">
+    <h1 class="page-title">What a floor elevation survey shows (and what it doesn’t)</h1>
+    <p class="lead">
+      A floor elevation survey measures the relative height of points across your living floors. Done properly, it produces a contour map that shows high and low areas.
+    </p>
+
+    <section>
+      <h2>What it shows well</h2>
+      <ul class="check-list">
+        <li>Patterns of differential movement (one side lower than another, center high, edges low, etc.)</li>
+        <li>Whether the floors are relatively flat or have clear slopes and bowls</li>
+        <li>A baseline you can compare against later if you choose to monitor</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What it does not show by itself</h2>
+      <ul class="check-list">
+        <li>The exact cause of the movement</li>
+        <li>Whether the movement is active right now</li>
+        <li>Whether repair is required</li>
+        <li>The condition of the soil under the slab</li>
+        <li>Future performance</li>
+      </ul>
+      <p>
+        The map is data. Interpretation is separate.
+      </p>
+    </section>
+
+    <section>
+      <h2>Why interpretation matters in Arizona</h2>
+      <p>
+        In Arizona the same map can be read two different ways depending on who is holding it. A repair company may see a reason to install piers. An independent read may see movement that is common for the soil type, age of the house, and drainage conditions — movement that can be watched rather than immediately corrected.
+      </p>
+      <p>
+        A good survey includes the numbers, the map, and a plain discussion of what those numbers most likely mean in context. The map alone is not a diagnosis.
+      </p>
+      <div class="contact-box">
+        <p><strong>Questions about a survey you already have?</strong></p>
+        <a class="phone-link" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
