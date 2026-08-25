@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { PHONE, PHONE_TEL } from '../../../lib/site.ts';
+---
+
+<BaseLayout
+  title="Questions to ask a foundation repair contractor before you sign"
+  description="A short list of practical questions that protect Arizona homeowners before signing a foundation repair contract."
+>
+  <div class="container">
+    <h1 class="page-title">Questions to ask a foundation repair contractor before you sign</h1>
+    <p class="lead">
+      Before you sign a foundation repair contract, ask these questions and write down the answers.
+    </p>
+
+    <section>
+      <ul class="check-list">
+        <li>What specific measurements support this recommendation?</li>
+        <li>Is the movement settlement, heave, or a combination?</li>
+        <li>What happens if we improve drainage and wait twelve months instead?</li>
+        <li>How many piers are proposed and why that number?</li>
+        <li>What is the expected remaining movement after the work is done?</li>
+        <li>Who is the actual crew and who is the warranty company?</li>
+        <li>Can I see the floor elevation data you used?</li>
+        <li>What does the warranty actually cover, and what voids it?</li>
+      </ul>
+    </section>
+
+    <section>
+      <p>
+        A contractor who welcomes these questions is usually easier to work with than one who treats them as delay tactics. You are not being difficult. You are buying clarity before you buy steel.
+      </p>
+      <div class="contact-box">
+        <p><strong>Want help preparing the questions?</strong></p>
+        <a class="phone-link" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
