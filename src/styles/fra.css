@@ -408,10 +408,10 @@ section h2 {
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--line);
-  padding: 2.5rem 1.5rem;
-  font-size: 0.9rem;
+  padding: 3rem 1.5rem 2.5rem;
+  font-size: 0.95rem;
   color: var(--muted);
-  background: var(--card);
+  background: #f3f0ea;
 }
 
 .footer-inner {
@@ -419,27 +419,52 @@ section h2 {
   margin: 0 auto;
 }
 
-.footer-inner p {
-  margin: 0 0 0.6rem;
+.footer-brand {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.25rem;
+  color: var(--ink);
+  margin: 0 0 0.25rem;
+}
+
+.footer-tag {
+  margin: 0 0 1.5rem;
+  font-size: 0.9rem;
 }
 
 .footer-nav {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 1.4rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer-nav a {
-  color: var(--muted);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-nav a:hover {
+  color: var(--accent);
+}
+
+.footer-phone {
+  margin: 0 0 1.5rem;
 }
 
 .disclaimer {
-  font-size: 0.82rem;
-  margin-top: 1.5rem;
-  padding-top: 1.15rem;
+  font-size: 0.85rem;
+  margin: 0 0 1.25rem;
+  padding-top: 1.25rem;
   border-top: 1px solid var(--line);
-  max-width: 54ch;
+  max-width: 52ch;
+  line-height: 1.55;
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #888;
 }
 
 .page-title {
