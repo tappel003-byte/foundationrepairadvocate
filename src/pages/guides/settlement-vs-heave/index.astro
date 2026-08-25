@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { PHONE, PHONE_TEL } from '../../../lib/site.ts';
+---
+
+<BaseLayout
+  title="Settlement vs heave in Arizona — is movement always a repair?"
+  description="Arizona expansive soils produce both settlement and heave. They look similar from the living room but are not treated the same way."
+>
+  <div class="container">
+    <h1 class="page-title">Settlement vs heave in Arizona</h1>
+    <p class="lead">
+      Arizona soils, especially expansive clays, move with moisture. Both settlement and heave create cracks, sloping floors, and sticking doors. They are not the same problem.
+    </p>
+
+    <section>
+      <h2>Settlement</h2>
+      <p>
+        Downward movement. The structure loses support in one area. Underpinning or piers are sometimes appropriate when the movement is significant and progressive.
+      </p>
+    </section>
+
+    <section>
+      <h2>Heave</h2>
+      <p>
+        Upward movement. The soil pushes the slab or foundation up. Installing piers into heaving soil can make the problem worse or simply transfer the movement elsewhere.
+      </p>
+    </section>
+
+    <section>
+      <h2>Mixed or stable movement</h2>
+      <p>
+        Many Arizona homes show a mix of both over time, or movement that looks dramatic on a floor map but has been stable for years. Visible distress does not automatically equal a need for structural repair.
+      </p>
+    </section>
+
+    <section>
+      <h2>Useful questions</h2>
+      <ul class="check-list">
+        <li>Is the movement recent or long-standing?</li>
+        <li>Is it getting worse, or has it been the same for several seasons?</li>
+        <li>Are there clear drainage, plumbing, or irrigation contributors?</li>
+        <li>Does the pattern on the floor map look more like classic settlement, classic heave, or something less clear?</li>
+      </ul>
+      <p>
+        Repair is sometimes the right answer. Often it is not the first answer. Understanding which direction the soil is moving is the starting point, not the sales pitch.
+      </p>
+      <div class="contact-box">
+        <p><strong>Need help reading the pattern?</strong></p>
+        <a class="phone-link" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

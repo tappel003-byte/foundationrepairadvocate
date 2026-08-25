@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { PHONE, PHONE_TEL } from '../../../lib/site.ts';
+---
+
+<BaseLayout
+  title="When monitoring is smarter than installing piers"
+  description="Not every uneven floor in Arizona needs piers. When a documented baseline and watch list is the better first step."
+>
+  <div class="container">
+    <h1 class="page-title">When monitoring is smarter than installing piers</h1>
+    <p class="lead">
+      Not every uneven floor needs piers.
+    </p>
+
+    <section>
+      <h2>Monitoring makes more sense when</h2>
+      <ul class="check-list">
+        <li>The movement appears long-standing and not accelerating</li>
+        <li>Drainage or plumbing issues are obvious contributors</li>
+        <li>The floor map shows modest differentials that are common for the soil and age of the house</li>
+        <li>There is no clear progressive distress (new cracks, doors that have recently started sticking, etc.)</li>
+      </ul>
+    </section>
+
+    <section>
+      <p>
+        In these cases, a documented baseline survey plus a practical watch list gives you a way to check whether the problem is active. Coming back in 12 months and comparing the numbers is often more useful than installing a permanent repair based on a single visit.
+      </p>
+      <p>
+        Repair is still the right answer when movement is significant and progressive. The point is simply that “we can fix it” is not the same sentence as “it needs to be fixed right now.”
+      </p>
+      <div class="contact-box">
+        <p><strong>Want a baseline before deciding?</strong></p>
+        <a class="phone-link" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

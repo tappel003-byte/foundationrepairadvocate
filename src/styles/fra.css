@@ -638,3 +638,37 @@ section h2 {
   max-width: 48ch;
   margin: 0.5rem 0 0;
 }
+
+/* Guides index */
+.guides-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+}
+
+.guides-list li {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.guides-list li:last-child {
+  border-bottom: none;
+}
+
+.guides-list a {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.guides-list a:hover {
+  color: var(--accent);
+}
+
+.guides-list p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
