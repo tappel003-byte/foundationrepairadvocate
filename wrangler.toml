@@ -4,3 +4,12 @@ workers_dev = true
 
 [assets]
 directory = "./dist"
+
+# Attach custom domain on deploy (bypasses broken dashboard Add Domain UI)
+[[routes]]
+pattern = "foundationrepairadvocate.com"
+custom_domain = true
+
+[[routes]]
+pattern = "www.foundationrepairadvocate.com"
+custom_domain = true

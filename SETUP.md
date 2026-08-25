@@ -2,10 +2,35 @@
 
 Domain **foundationrepairadvocate.com** is on Cloudflare. Code is on GitHub: https://github.com/tappel003-byte/foundationrepairadvocate
 
-## Step 1 — Cloudflare Pages (do this first)
+## Step 1 — Cloudflare Workers (current setup)
+
+This site deploys as a **Worker** (not Pages). Repo: https://github.com/tappel003-byte/foundationrepairadvocate
+
+### Build settings (Cloudflare dashboard → Worker → Settings → Build)
+
+| Setting | Value |
+|---------|--------|
+| Production branch | `main` |
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler deploy` |
+
+**Important:** Use `wrangler deploy` — **not** `wrangler versions upload`. The latter requires a manual **Promote** step. `wrangler deploy` goes live immediately and attaches custom domains from `wrangler.toml`.
+
+### Custom domain
+
+`wrangler.toml` includes `foundationrepairadvocate.com` and `www`. After a successful deploy, check **Workers → foundationrepairadvocate → Domains**.
+
+If the dashboard **Add Domain** button does nothing, the domain should still attach on deploy. Fallback: **DNS** → **Records** → **Add record** → Type **Worker** → Name `@` → Worker **foundationrepairadvocate** (repeat for `www`).
+
+Temporary URL while DNS connects: https://foundationrepairadvocate.tappel003.workers.dev/
+
+## Step 1 (legacy) — Cloudflare Pages
+
+<details>
+<summary>Pages setup (not used for this project)</summary>
 
 1. Open [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → **Create**
-2. Choose **Pages** → **Connect to Git** → authorize GitHub if needed
+2. Choose **Pages** → **Connect to Git**
 3. Select repo **`foundationrepairadvocate`**
 4. Build settings:
 
@@ -17,8 +42,9 @@ Domain **foundationrepairadvocate.com** is on Cloudflare. Code is on GitHub: htt
    | Build output directory | `dist` |
    | Environment variable | `NODE_VERSION` = `22` |
 
-5. Click **Save and Deploy**. First build takes ~1–2 minutes.
-6. You’ll get a `*.pages.dev` URL — open it and confirm the site looks right.
+5. Click **Save and Deploy**.
+
+</details>
 
 ## Step 2 — Custom domain
 
