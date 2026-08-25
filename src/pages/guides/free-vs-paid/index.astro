@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { PHONE, PHONE_TEL } from '../../../lib/site.ts';
+---
+
+<BaseLayout
+  title="Free foundation inspection vs paid independent survey"
+  description="How free foundation inspections differ from a paid independent floor elevation survey in Arizona — incentive, language, and pressure."
+>
+  <div class="container">
+    <h1 class="page-title">Free foundation inspection vs paid independent survey</h1>
+    <p class="lead">
+      Most foundation repair companies in Arizona offer free inspections. The visit is real. The incentives are different.
+    </p>
+
+    <section>
+      <h2>How free inspections work</h2>
+      <p>
+        Someone comes to the house, looks at cracks, often takes floor readings, and produces a proposal. The cost of that visit is recovered through repair work. That does not make every recommendation dishonest. It does shape what gets emphasized and what tends to stay quiet.
+      </p>
+    </section>
+
+    <section>
+      <h2>How a paid independent survey works</h2>
+      <p>
+        You pay for the measurement and the interpretation. There is no repair contract at the end of the visit. The person doing the work has no financial reason to find a project.
+      </p>
+    </section>
+
+    <section>
+      <h2>Practical differences</h2>
+      <ul class="check-list">
+        <li><strong>Incentive</strong> — Free inspections are the front end of a sales process. Paid independent work ends with information.</li>
+        <li><strong>Language</strong> — Independent reports more often include “monitor,” “improve drainage first,” or “this may not get worse.”</li>
+        <li><strong>Timing pressure</strong> — Free inspections frequently carry urgency. Independent work does not need you to decide the same day.</li>
+        <li><strong>Scope</strong> — Some free inspections are brief. A proper independent survey is methodical and produces a usable contour map and written summary.</li>
+      </ul>
+      <p>
+        Neither approach is automatically right or wrong. The question is whether you want the person measuring your floors to have a financial interest in the next step.
+      </p>
+      <div class="contact-box">
+        <p><strong>Want the independent version?</strong></p>
+        <a class="phone-link" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
