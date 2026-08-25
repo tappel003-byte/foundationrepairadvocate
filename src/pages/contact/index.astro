@@ -1,11 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { PHONE, PHONE_TEL } from '../../lib/site.ts';
+import { PHONE, PHONE_TEL, EMAIL_MAILTO } from '../../lib/site.ts';
 ---
 
 <BaseLayout
   title="Contact"
-  description={`Contact Foundation Repair Advocate for independent foundation second opinions and floor elevation surveys in Arizona. Call or text ${PHONE}.`}
+  description="Contact Foundation Repair Advocate for independent foundation second opinions and floor elevation surveys in Arizona. Call or text (928) 298-5756."
 >
   <div class="container">
     <h1 class="page-title">Contact</h1>
@@ -17,6 +17,10 @@ import { PHONE, PHONE_TEL } from '../../lib/site.ts';
     <div class="contact-box">
       <p><strong>Call or text</strong></p>
       <a class="phone-link" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+      <p style="margin-top: 1rem;">
+        <a href={EMAIL_MAILTO}>Email us</a>
+        <span style="color: var(--muted); font-size: 0.92rem;"> — for non-urgent questions</span>
+      </p>
       <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--muted);">
         You'll reach someone who can discuss your situation — not a call center.
       </p>

@@ -1,13 +1,11 @@
 ---
-import { NAV, PHONE, PHONE_TEL } from '../lib/site.ts';
+import { NAV, PHONE, PHONE_TEL, EMAIL_MAILTO, SITE_NAME } from '../lib/site.ts';
 ---
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <a href="/" class="footer-brand" aria-label="Foundation Repair Advocate — home">
-      <span class="footer-brand-small">Foundation Repair</span>
-      <span class="footer-brand-large">ADVOCATE</span>
-    </a>
+    <p class="footer-brand">{SITE_NAME}</p>
+    <p class="footer-tag">Independent second opinions & floor elevation surveys — Arizona</p>
 
     <nav class="footer-nav" aria-label="Footer">
       <a href="/">Home</a>
@@ -16,16 +14,16 @@ import { NAV, PHONE, PHONE_TEL } from '../lib/site.ts';
       ))}
     </nav>
 
-    <a class="footer-phone" href={`tel:${PHONE_TEL}`}>
-      {PHONE}
-      <span class="footer-phone-note">Call or text</span>
-    </a>
+    <p class="footer-phone">
+      <a class="phone-link" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+      <span style="margin: 0 0.5rem; color: var(--muted);">·</span>
+      <a href={EMAIL_MAILTO}>Email us</a>
+    </p>
 
     <p class="disclaimer">
-      Independent floor elevation surveys and second opinions for Arizona homeowners.
-      Not a repair contractor, home inspection company, or licensed engineering firm.
-      We do not sell piers.
-      <a href="/disclosure/">Scope &amp; disclosure</a>
+      We provide independent floor elevation surveys and practical second opinions.
+      We are not a foundation repair contractor and we do not sell piers or structural repair.
+      When stamped engineering is the right next step, we say so.
     </p>
 
     <p class="footer-copy">© {new Date().getFullYear()} Foundation Repair Advocate</p>
