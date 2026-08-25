@@ -590,6 +590,17 @@ section h2 {
   margin-top: 2.5rem;
 }
 
+.survey-legend {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+  max-width: 52ch;
+}
+
+.survey-legend strong {
+  color: var(--ink);
+}
+
 .survey-pair {
   display: grid;
   gap: 1.25rem;
@@ -616,6 +627,96 @@ section h2 {
   width: 100%;
   height: auto;
   background: #faf9f7;
+}
+
+.survey-enlarge {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+  position: relative;
+  font: inherit;
+  color: inherit;
+}
+
+.survey-enlarge:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.survey-enlarge-hint {
+  position: absolute;
+  right: 0.65rem;
+  bottom: 0.65rem;
+  padding: 0.25rem 0.55rem;
+  background: rgb(26 26 26 / 0.72);
+  color: var(--phone-text);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.survey-lightbox {
+  padding: 0;
+  border: none;
+  max-width: min(96vw, 72rem);
+  width: max-content;
+  background: transparent;
+}
+
+.survey-lightbox::backdrop {
+  background: rgb(26 26 26 / 0.82);
+}
+
+.survey-lightbox-inner {
+  position: relative;
+  background: var(--card);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgb(0 0 0 / 0.35);
+}
+
+.survey-lightbox-title {
+  margin: 0;
+  padding: 0.75rem 3rem 0.65rem 1rem;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
+.survey-lightbox-img {
+  display: block;
+  max-width: min(92vw, 68rem);
+  max-height: 82vh;
+  width: auto;
+  height: auto;
+}
+
+.survey-lightbox-close {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.55rem;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.survey-lightbox-close:hover {
+  color: var(--ink);
+  background: var(--bg);
 }
 
 .survey-figure figcaption {
