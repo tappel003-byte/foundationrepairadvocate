@@ -7,6 +7,6 @@
   <text x="400" y="55" text-anchor="middle" class="top">FOUNDATION REPAIR</text>
   <line x1="180" y1="75" x2="620" y2="75" stroke="#1a1a1a" stroke-width="1.5"/>
   <text x="400" y="175" text-anchor="middle" class="main">ADVOCATE</text>
-  <line x1="280" y1="195" x2="520" y2="195" stroke="#8b4513" stroke-width="2.5"/>
+  <line x1="180" y1="195" x2="620" y2="195" stroke="#8b4513" stroke-width="2.5"/>
   <text x="400" y="240" text-anchor="middle" class="bottom">WHITE MOUNTAINS · ARIZONA</text>
 </svg>
