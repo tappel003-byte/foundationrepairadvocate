@@ -1,4 +1,3 @@
-/** Single place to change the public phone number sitewide. */
 export const PHONE = '(928) 298-5756';
 export const PHONE_TEL = '+19282985756';
 export const PHONE_DISPLAY = '(928) 298-5756';
@@ -11,5 +10,6 @@ export const NAV = [
   { href: '/how-it-works/', label: 'How it works' },
   { href: '/guides/', label: 'Guides' },
   { href: '/service-area/', label: 'Service area' },
+  { href: '/disclosure/', label: 'Disclosure' },
   { href: '/contact/', label: 'Contact' },
 ];
