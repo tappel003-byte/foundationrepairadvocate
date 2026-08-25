@@ -1,5 +1,5 @@
 ---
-import { NAV, PHONE, PHONE_TEL, SITE_NAME } from '../lib/site.ts';
+import { NAV, PHONE, PHONE_TEL, EMAIL_MAILTO, SITE_NAME } from '../lib/site.ts';
 ---
 
 <footer class="site-footer">
@@ -16,6 +16,8 @@ import { NAV, PHONE, PHONE_TEL, SITE_NAME } from '../lib/site.ts';
 
     <p class="footer-phone">
       <a class="phone-link" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+      <span style="margin: 0 0.5rem; color: var(--muted);">·</span>
+      <a href={EMAIL_MAILTO}>Email us</a>
     </p>
 
     <p class="disclaimer">

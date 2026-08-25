@@ -1,6 +1,9 @@
 export const PHONE = '(928) 298-5756';
 export const PHONE_TEL = '+19282985756';
 export const PHONE_DISPLAY = '(928) 298-5756';
+/** Use in mailto: only — do not print this address in page text (spam). */
+export const EMAIL = 'tim@foundationrepairadvocate.com';
+export const EMAIL_MAILTO = `mailto:${EMAIL}`;
 export const SITE_NAME = 'Foundation Repair Advocate';
 export const TAGLINE = 'Independent second opinions & floor elevation surveys — Arizona';
 
