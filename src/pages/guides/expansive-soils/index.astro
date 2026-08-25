@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { PHONE, PHONE_TEL } from '../../../lib/site.ts';
+---
+
+<BaseLayout
+  title="Arizona expansive soils and why drainage often matters more than steel"
+  description="Expansive clay soils in Arizona shrink and swell with moisture. Controlling water is often the highest-leverage first step before any structural repair."
+>
+  <div class="container">
+    <h1 class="page-title">Arizona expansive soils and why drainage often matters more than steel</h1>
+    <p class="lead">
+      Much of Arizona sits on expansive clay soils that shrink when dry and swell when wet. That movement shows up as cracks, sloping floors, and sticking doors.
+    </p>
+
+    <section>
+      <p>
+        Steel can stabilize a structure. It does not stop the soil from moving. If water is still being delivered to the clay (poor grading, clogged gutters, irrigation against the foundation, plumbing leaks), the same forces remain.
+      </p>
+      <p>
+        In many cases the highest-leverage first step is controlling moisture: grading, drainage, gutters, and irrigation changes. Sometimes that is enough. Sometimes it is the necessary preparation before any structural work will hold.
+      </p>
+      <p>
+        Ignoring drainage and going straight to piers is a common and expensive pattern.
+      </p>
+      <div class="contact-box">
+        <p><strong>Want to understand the moisture picture at your house?</strong></p>
+        <a class="phone-link" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
