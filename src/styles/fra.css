@@ -739,6 +739,10 @@ section h2 {
   margin: 0.5rem 0 0;
 }
 
+.survey-samples + section {
+  margin-top: 4rem;
+}
+
 /* Guides index */
 .guides-list {
   list-style: none;
