@@ -76,7 +76,7 @@ img {
 .header-inner {
   max-width: var(--wide);
   margin: 0 auto;
-  padding: 0.9rem 1.5rem;
+  padding: 1rem 1.5rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -91,7 +91,7 @@ img {
 }
 
 .logo-img {
-  height: 78px;
+  height: 110px;
   width: auto;
   display: block;
 }
@@ -163,7 +163,7 @@ img {
     display: none;
   }
   .logo-img {
-    height: 64px;
+    height: 90px;
   }
 }
 
