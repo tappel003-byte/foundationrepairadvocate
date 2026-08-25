@@ -1,6 +1,6 @@
-export const PHONE = '(928) 251-2608';
-export const PHONE_TEL = '+19282512608';
-export const PHONE_DISPLAY = '(928) 251-2608';
+export const PHONE = '(928) 298-5756';
+export const PHONE_TEL = '+19282985756';
+export const PHONE_DISPLAY = '(928) 298-5756';
 export const SITE_NAME = 'Foundation Repair Advocate';
 export const TAGLINE = 'Independent second opinions & floor elevation surveys — Arizona';
 
