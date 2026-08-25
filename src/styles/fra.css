@@ -123,6 +123,15 @@ img {
 .header-inner .phone-link {
   margin-left: auto;
   flex-shrink: 0;
+  background: transparent;
+  color: var(--ink) !important;
+  border: 1px solid var(--line);
+}
+
+.header-inner .phone-link:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--phone-text) !important;
 }
 
 @media (max-width: 720px) {
@@ -154,19 +163,19 @@ img {
   align-items: center;
   gap: 0.35rem;
   padding: 0.4rem 0.75rem;
-  background: transparent;
-  color: var(--ink) !important;
-  border: 1px solid var(--line);
+  background: var(--phone-bg);
+  color: var(--phone-text) !important;
   text-decoration: none;
   font-family: 'DM Mono', monospace;
   font-size: 0.78rem;
   border-radius: 4px;
   white-space: nowrap;
+  border: 1px solid var(--phone-bg);
 }
 
 .phone-link:hover {
-  background: var(--ink);
-  border-color: var(--ink);
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
   color: var(--phone-text) !important;
 }
 
