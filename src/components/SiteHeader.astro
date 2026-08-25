@@ -1,12 +1,12 @@
 ---
-import { NAV, PHONE, PHONE_TEL, SITE_NAME, TAGLINE } from '../lib/site.ts';
+import { NAV, PHONE, PHONE_TEL, SITE_NAME } from '../lib/site.ts';
 ---
 
 <header class="site-header">
   <div class="header-inner">
     <a href="/" class="logo">
-      {SITE_NAME}
-      <span>{TAGLINE}</span>
+      <img src="/logo.svg" alt="Foundation Repair Advocate — White Mountains, Arizona" class="logo-img" width="180" height="72" />
+      <span class="visually-hidden">{SITE_NAME}</span>
     </a>
     <nav class="nav-links" aria-label="Main">
       {NAV.map((item) => (
