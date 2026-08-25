@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { PHONE, PHONE_TEL } from '../../../lib/site.ts';
+---
+
+<BaseLayout
+  title="Reading a foundation repair bid: pier count, methods, and red flags"
+  description="How to read a foundation repair proposal in Arizona — pier count, methods, language, and common red flags."
+>
+  <div class="container">
+    <h1 class="page-title">Reading a foundation repair bid</h1>
+    <p class="lead">
+      A foundation repair bid is a sales document as much as a technical one. Look at three things carefully.
+    </p>
+
+    <section>
+      <h2>Pier count</h2>
+      <p>
+        More is not automatically better. Ask why that exact number and spacing was chosen and what the floor data showed.
+      </p>
+    </section>
+
+    <section>
+      <h2>Method</h2>
+      <p>
+        Helical piers, push piers, and other systems behave differently in expansive clay. Make sure the recommendation matches the direction of movement (settlement vs heave).
+      </p>
+    </section>
+
+    <section>
+      <h2>Language</h2>
+      <p>
+        Watch for urgency, worst-case framing, and vague warranty language. Clear scope, clear exclusions, and a willingness to discuss monitoring are better signs.
+      </p>
+    </section>
+
+    <section>
+      <h2>Red flags</h2>
+      <ul class="check-list">
+        <li>Pressure to sign the same day</li>
+        <li>Refusal to share the actual elevation data</li>
+        <li>Recommendations that ignore obvious drainage problems</li>
+      </ul>
+      <div class="contact-box">
+        <p><strong>Have a bid you want a second set of eyes on?</strong></p>
+        <a class="phone-link" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
