@@ -1,0 +1,155 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { PHONE, PHONE_TEL, SITE_NAME } from '../../lib/site.ts';
+---
+
+<BaseLayout
+  title="Scope & disclosure"
+  description="What Foundation Repair Advocate provides and what we do not — informational floor surveys and experience-based guidance, not engineering stamps or repair contracts."
+>
+  <div class="container">
+    <h1 class="page-title">Scope &amp; disclosure</h1>
+    <p class="lead">
+      Please read this before we schedule a visit. It protects everyone and keeps expectations
+      honest.
+    </p>
+
+    <section>
+      <h2>What this service is</h2>
+      <p>
+        {SITE_NAME} provides independent floor elevation surveys, on-site observation, and
+        plain-language discussion based on field experience and forensic techniques used in
+        foundation repair and related geotechnical work across Arizona, New Mexico, Colorado,
+        Texas, and Utah.
+      </p>
+      <p>
+        This is a <strong>non-destructive first look with known limits</strong>: measure what the
+        floors are doing, talk through what that may mean, and help you decide whether monitoring,
+        drainage, repair, or a full engineering investigation is warranted — without fear and
+        without a pier to sell.
+      </p>
+    </section>
+
+    <section>
+      <h2>First step — not a full investigation</h2>
+      <p>
+        A complete picture of a foundation problem can involve geotechnical exploration (borings,
+        soil labs) and/or stamped structural engineering. Those services look at factors we cannot
+        see from the living room — conditions in the dirt, design loads, and formal repair design.
+        They also cost significantly more and often take longer.
+      </p>
+      <p>
+        Our visit does not replace that work. It often comes <em>before</em> it. Many homes never
+        need the full package. Some do — and then you hire the right PE or geotech firm with better
+        questions and a measured baseline already in hand.
+      </p>
+      <div class="callout">
+        <p>
+          <strong>Non-destructive first look with known limits.</strong> Floor survey and
+          observation first. Full geotechnical or structural investigation when the facts call for
+          it — at that higher price, for that deeper scope.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>What this service is not</h2>
+      <ul class="check-list">
+        <li>
+          <strong>Not a licensed Arizona professional engineering (PE) service.</strong> We do not
+          provide stamped engineering reports, structural calculations, or designs intended for
+          permitting or construction documents.
+        </li>
+        <li>
+          <strong>Not a home inspection</strong> under Arizona home inspector licensing. We do not
+          perform a general home inspection or certify a property for a real estate transaction.
+        </li>
+        <li>
+          <strong>Not a foundation repair contractor.</strong> We do not sell, install, or bid
+          helical piers, push piers, foam, or other structural repair. We have no commission on
+          repair work.
+        </li>
+        <li>
+          <strong>Not a subsurface investigation.</strong> We cannot see into the dirt. Soil
+          conditions below grade, moisture at depth, and hidden defects require geotechnical
+          exploration, excavation, or other methods we do not perform on a standard survey visit.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What we can and cannot know</h2>
+      <p>
+        Floor elevations, visible cracks, door and window behavior, drainage at the surface, and
+        patterns we have seen over years of field work are useful. They are still
+        <em>observations and experience</em> — not proof of what is happening below the slab or
+        footing.
+      </p>
+      <p>
+        Two homes with similar floor maps can have different causes. Two cracks that look the same
+        can mean different things. We will tell you when the picture is clear enough to act, when
+        monitoring is wiser, and when a licensed engineer or geotechnical firm is the right next
+        step.
+      </p>
+      <div class="callout">
+        <p>
+          <strong>You are hiring judgment and measurement — not a guarantee.</strong> Our written
+          summary and conversation are informational. They do not replace engineering, legal advice,
+          contractor bids, or your own decision-making.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Real estate transactions</h2>
+      <p>
+        Agents and parties often need a calm first look when cracks or settlement concerns show up
+        mid-transaction. Our survey and notes are informational — based on experience and forensic
+        observation — so everyone can talk about facts before panic or a repair bid drives the deal.
+      </p>
+      <p>
+        They are not a certification that the foundation is sound, not a seller disclosure document,
+        and not a substitute for inspections, lender requirements, or a full geotechnical / structural
+        investigation when one is required. Contract language and disclosure remain the
+        responsibility of the parties and their advisors.
+      </p>
+    </section>
+
+    <section>
+      <h2>Acknowledgement (for clients)</h2>
+      <p>
+        By scheduling and completing a visit with {SITE_NAME}, you acknowledge that:
+      </p>
+      <ul class="check-list">
+        <li>You understand the scope and limits above.</li>
+        <li>
+          Findings are based on accessible observation, floor elevation data, and professional
+          experience — not subsurface exploration or stamped engineering.
+        </li>
+        <li>
+          Recommendations are guidance for education and decision-making, not a directive to repair
+          or not repair.
+        </li>
+        <li>
+          You will seek a licensed Arizona PE, geotechnical firm, attorney, or contractor when the
+          situation requires their role — and that we will say so when we believe that is needed.
+        </li>
+      </ul>
+      <p style="margin-top: 1.25rem; font-size: 0.95rem; color: var(--muted);">
+        A signed copy can be included with your engagement paperwork when we schedule. This page is
+        the public statement of the same limits.
+      </p>
+    </section>
+
+    <section>
+      <h2>Questions</h2>
+      <p>
+        If any of this is unclear before you book, ask. We would rather talk it through than leave
+        an assumption on either side.
+      </p>
+      <div class="contact-box">
+        <a class="phone-link" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

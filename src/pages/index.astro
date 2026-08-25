@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SurveySamples from '../components/SurveySamples.astro';
 import { PHONE, PHONE_TEL } from '../lib/site.ts';
 ---
 
@@ -8,18 +9,21 @@ import { PHONE, PHONE_TEL } from '../lib/site.ts';
   description="Paid independent foundation second opinions and Pro Level floor elevation surveys in Arizona. Complete the picture before you sign a repair contract. White Mountains, Show Low, and statewide."
 >
   <div class="hero">
-    <h1>The rest of the story.</h1>
+    <p class="hero-eyebrow">A voice of reason.</p>
+    <h1>You have options they didn't mention.</h1>
     <p class="hero-lead">
-      Independent floor elevation surveys and foundation second opinions for Arizona homeowners —
-      paid, practical, and on your side of the table.
+      Independent floor elevation surveys and foundation second opinions for Arizona homeowners.
+      We exist to give you the full picture — not the version built around a repair contract or
+      someone else's commission.
     </p>
     <div class="hero-actions">
       <a class="btn btn-primary" href={`tel:${PHONE_TEL}`}>Call {PHONE}</a>
       <a class="btn btn-secondary" href="/how-it-works/">How it works</a>
     </div>
     <p class="hero-note">
-      Not a free sales inspection. Not a pier company. You pay for clarity — including when the
-      honest answer is <em>wait and monitor</em>.
+      A non-destructive first look with known limits — not a free sales inspection, not a pier
+      company, not a full geotech package. You pay for clarity, including when the honest answer is
+      <em>wait and monitor</em>.
     </p>
   </div>
 
@@ -27,14 +31,15 @@ import { PHONE, PHONE_TEL } from '../lib/site.ts';
     <section>
       <h2>What most homeowners never hear</h2>
       <p class="lead">
-        The foundation repair industry often stops at the symptom. You get a crack, a scary bid, and
-        pressure to sign. Nobody completes the picture: what the floors actually show, what you can
-        watch for, what risk looks like if you wait, and when repair is genuinely warranted.
+        Foundation problems rarely come with one answer. Monitor. Fix drainage first. Repair part of
+        the house. Wait a year and measure again. Sign tonight. Most homeowners only hear the last
+        one — because that's what closes a sale.
       </p>
       <div class="callout">
         <p>
           <strong>You can absolutely fix it — you don't have to right now.</strong> That sentence
-          rarely gets said in a living room. It's the reason this service exists.
+          rarely gets said in a living room. Our job is to make sure you know what your options
+          actually are before anyone asks you to sign.
         </p>
       </div>
     </section>
@@ -46,7 +51,7 @@ import { PHONE, PHONE_TEL } from '../lib/site.ts';
           <h3>Pro Level floor survey</h3>
           <p>
             Professional optical leveling — not a sales-demo gadget. Contour map of your living
-            levels and plain-language read of what it likely means.
+            levels and plain-language read of what it likely means. The usual first diagnostic step.
           </p>
         </div>
         <div class="card">
@@ -57,19 +62,26 @@ import { PHONE, PHONE_TEL } from '../lib/site.ts';
           </p>
         </div>
         <div class="card">
-          <h3>Monitor & resurvey</h3>
+          <h3>Monitor &amp; resurvey</h3>
           <p>
             When movement is real but not urgent, we document a baseline and what to watch for over
             the next year — then compare again if needed.
           </p>
         </div>
       </div>
-      <p style="margin-top: 1.5rem;">
+      <p style="margin-top: 1.25rem;">
+        This is experience and forensic observation — not a full geotechnical or structural
+        investigation. Those go deeper (and cost more) when the facts call for them.
+        <a href="/disclosure/">Read the full scope →</a>
+      </p>
+      <p style="margin-top: 0.75rem;">
         <a href="/what-you-get/">See everything included →</a>
         &nbsp;·&nbsp;
         <a href="/guides/">Read the guides →</a>
       </p>
     </section>
+
+    <SurveySamples />
 
     <section>
       <h2>Who this is for</h2>
@@ -87,7 +99,7 @@ import { PHONE, PHONE_TEL } from '../lib/site.ts';
         Surveys are scheduled by phone. We'll walk you through a simple floor-plan scan before your
         visit so we're ready to measure when we arrive.
       </p>
-      <div class="hero-actions" style="margin-top: 1.25rem;">
+      <div class="hero-actions" style="margin-top: 1rem;">
         <a class="btn btn-primary" href={`tel:${PHONE_TEL}`}>Call or text {PHONE}</a>
         <a class="btn btn-secondary" href="/contact/">Contact</a>
       </div>
