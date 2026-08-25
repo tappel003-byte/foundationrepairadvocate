@@ -1,12 +1,17 @@
 ---
-import { NAV, PHONE, PHONE_TEL, SITE_NAME } from '../lib/site.ts';
+import { NAV, PHONE, PHONE_TEL } from '../lib/site.ts';
 ---
 
 <header class="site-header">
   <div class="header-inner">
-    <a href="/" class="logo">
-      <img src="/logo.svg" alt="Foundation Repair Advocate — White Mountains, Arizona" class="logo-img" width="180" height="72" />
-      <span class="visually-hidden">{SITE_NAME}</span>
+    <a href="/" class="logo" aria-label="Foundation Repair Advocate — White Mountains, Arizona — home">
+      <span class="masthead">
+        <span class="masthead-top">Foundation Repair</span>
+        <span class="masthead-rule masthead-rule--ink" aria-hidden="true"></span>
+        <span class="masthead-main">Advocate</span>
+        <span class="masthead-rule masthead-rule--accent" aria-hidden="true"></span>
+        <span class="masthead-bottom">White Mountains · Arizona</span>
+      </span>
     </a>
     <nav class="nav-links" aria-label="Main">
       {NAV.map((item) => (
