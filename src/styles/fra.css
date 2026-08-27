@@ -24,7 +24,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  font-family: 'Figtree', system-ui, sans-serif;
   font-size: 1.0625rem;
   line-height: 1.65;
   color: var(--ink);
@@ -34,7 +34,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Fraunces', Georgia, serif;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -118,7 +118,7 @@ img {
   background: var(--phone-bg);
   color: var(--phone-text) !important;
   text-decoration: none;
-  font-family: 'DM Mono', monospace;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
   font-size: 0.85rem;
   border-radius: 4px;
   white-space: nowrap;
@@ -146,7 +146,7 @@ img {
 .call-bar a {
   color: var(--phone-text);
   text-decoration: none;
-  font-family: 'DM Mono', monospace;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
   font-size: 0.95rem;
 }
 
@@ -186,7 +186,7 @@ img {
 .call-bar a {
   color: var(--phone-text);
   text-decoration: none;
-  font-family: 'DM Mono', monospace;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
   font-size: 0.95rem;
 }
 
@@ -234,7 +234,7 @@ main {
 
 .hero-eyebrow {
   margin: 0 0 0.65rem;
-  font-family: 'Source Serif 4', Georgia, serif;
+  font-family: 'Figtree', system-ui, sans-serif;
   font-size: 0.95rem;
   font-style: italic;
   color: var(--muted);
@@ -258,7 +258,7 @@ main {
 .btn {
   display: inline-block;
   padding: 0.7rem 1.25rem;
-  font-family: 'Source Serif 4', serif;
+  font-family: 'Figtree', system-ui, sans-serif;
   font-size: 1rem;
   text-decoration: none;
   border-radius: 4px;
@@ -387,7 +387,7 @@ section h2 {
 
 .compare th {
   background: #f0ece4;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Fraunces', Georgia, serif;
   font-weight: 600;
 }
 
@@ -422,7 +422,7 @@ section h2 {
   background: var(--ink);
   color: var(--bg);
   border-radius: 50%;
-  font-family: 'DM Mono', monospace;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
   font-size: 0.75rem;
   display: flex;
   align-items: center;
@@ -480,14 +480,14 @@ section h2 {
 }
 
 .footer-brand-small {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Fraunces', Georgia, serif;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.02em;
 }
 
 .footer-brand-large {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Fraunces', Georgia, serif;
   font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -526,7 +526,7 @@ section h2 {
   background: var(--phone-bg);
   color: var(--phone-text) !important;
   text-decoration: none;
-  font-family: 'DM Mono', monospace;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
   font-size: 0.95rem;
   border-radius: 4px;
   line-height: 1.2;
@@ -538,7 +538,7 @@ section h2 {
 }
 
 .footer-phone-note {
-  font-family: 'Source Serif 4', Georgia, serif;
+  font-family: 'Figtree', system-ui, sans-serif;
   font-size: 0.72rem;
   opacity: 0.75;
   letter-spacing: 0.02em;
@@ -653,7 +653,7 @@ section h2 {
   padding: 0.25rem 0.55rem;
   background: rgb(26 26 26 / 0.72);
   color: var(--phone-text);
-  font-family: 'DM Mono', monospace;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
   font-size: 0.68rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -684,7 +684,7 @@ section h2 {
 .survey-lightbox-title {
   margin: 0;
   padding: 0.75rem 3rem 0.65rem 1rem;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Fraunces', Georgia, serif;
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--ink);
@@ -728,7 +728,7 @@ section h2 {
 
 .survey-figure figcaption strong {
   color: var(--ink);
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Fraunces', Georgia, serif;
   font-weight: 600;
 }
 
@@ -761,7 +761,7 @@ section h2 {
 }
 
 .guides-list a {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Fraunces', Georgia, serif;
   font-size: 1.2rem;
   text-decoration: none;
   color: var(--ink);
