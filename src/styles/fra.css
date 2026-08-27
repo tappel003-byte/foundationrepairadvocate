@@ -1,15 +1,17 @@
 :root {
-  --bg: #faf9f7;
-  --ink: #1a1a1a;
-  --muted: #5c5c5c;
-  --line: #d8d4cc;
+  /* Cooler, more authoritative field — rust kept as the only warm accent */
+  --bg: #f3f5f7;
+  --ink: #12161c;
+  --muted: #5a6570;
+  --line: #cfd5dc;
   --accent: #8b4513;
   --accent-dark: #6d3610;
   --card: #ffffff;
-  --phone-bg: #1a1a1a;
-  --phone-text: #faf9f7;
-  --max: 42rem;
-  --wide: 56rem;
+  --phone-bg: #12161c;
+  --phone-text: #f3f5f7;
+  --max: 44rem;
+  --wide: 62rem;
+  --hero-wash: linear-gradient(165deg, #e8eef3 0%, #f3f5f7 42%, #f7f4f1 100%);
 }
 
 *,
@@ -25,7 +27,7 @@ html {
 body {
   margin: 0;
   font-family: 'Figtree', system-ui, sans-serif;
-  font-size: 1.0625rem;
+  font-size: 1.075rem;
   line-height: 1.65;
   color: var(--ink);
   background: var(--bg);
@@ -34,9 +36,10 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Outfit', system-ui, sans-serif;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
 a {
@@ -97,8 +100,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.4rem 1.25rem;
-  font-size: 0.95rem;
+  gap: 0.4rem 1.35rem;
+  font-family: 'Outfit', system-ui, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 .nav-links a {
@@ -221,31 +227,37 @@ main {
 
 /* Hero */
 .hero {
-  padding: 2.5rem 1.25rem 2rem;
+  padding: 3.25rem 1.25rem 2.75rem;
   max-width: var(--wide);
   margin: 0 auto;
+  background: var(--hero-wash);
+  border-bottom: 1px solid var(--line);
 }
 
 .hero h1 {
-  font-size: clamp(1.85rem, 5vw, 2.75rem);
-  margin: 0 0 0.75rem;
-  max-width: 18ch;
+  font-size: clamp(2.15rem, 5.8vw, 3.35rem);
+  margin: 0 0 0.85rem;
+  max-width: 16ch;
+  font-weight: 700;
 }
 
 .hero-eyebrow {
-  margin: 0 0 0.65rem;
-  font-family: 'Figtree', system-ui, sans-serif;
-  font-size: 0.95rem;
-  font-style: italic;
-  color: var(--muted);
-  letter-spacing: 0.01em;
+  margin: 0 0 0.85rem;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .hero-lead {
-  font-size: 1.2rem;
+  font-size: 1.22rem;
   color: var(--muted);
-  max-width: 38ch;
-  margin: 0 0 1.5rem;
+  max-width: 40ch;
+  margin: 0 0 1.65rem;
+  line-height: 1.55;
 }
 
 .hero-actions {
@@ -340,9 +352,10 @@ section + section {
 }
 
 section h2 {
-  font-size: 1.45rem;
+  font-size: clamp(1.45rem, 2.5vw, 1.85rem);
   margin: 0 0 1rem;
   padding-top: 0.5rem;
+  font-weight: 600;
 }
 
 .lead {
@@ -387,7 +400,7 @@ section h2 {
 
 .compare th {
   background: #f0ece4;
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Outfit', system-ui, sans-serif;
   font-weight: 600;
 }
 
@@ -480,14 +493,14 @@ section h2 {
 }
 
 .footer-brand-small {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Outfit', system-ui, sans-serif;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.02em;
 }
 
 .footer-brand-large {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Outfit', system-ui, sans-serif;
   font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -567,7 +580,8 @@ section h2 {
 }
 
 .page-title {
-  font-size: clamp(1.65rem, 4vw, 2.25rem);
+  font-size: clamp(1.85rem, 4.2vw, 2.6rem);
+  font-weight: 700;
   margin: 0 0 0.75rem;
 }
 
@@ -626,7 +640,7 @@ section h2 {
   display: block;
   width: 100%;
   height: auto;
-  background: #faf9f7;
+  background: var(--bg);
 }
 
 .survey-enlarge {
@@ -684,7 +698,7 @@ section h2 {
 .survey-lightbox-title {
   margin: 0;
   padding: 0.75rem 3rem 0.65rem 1rem;
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Outfit', system-ui, sans-serif;
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--ink);
@@ -728,7 +742,7 @@ section h2 {
 
 .survey-figure figcaption strong {
   color: var(--ink);
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Outfit', system-ui, sans-serif;
   font-weight: 600;
 }
 
@@ -761,7 +775,7 @@ section h2 {
 }
 
 .guides-list a {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Outfit', system-ui, sans-serif;
   font-size: 1.2rem;
   text-decoration: none;
   color: var(--ink);
