@@ -26,7 +26,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Figtree', system-ui, sans-serif;
+  font-family: 'Source Sans 3', system-ui, sans-serif;
   font-size: 1.075rem;
   line-height: 1.65;
   color: var(--ink);
@@ -36,10 +36,9 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Outfit', system-ui, sans-serif;
-  font-weight: 600;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 a {
@@ -101,10 +100,11 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.4rem 1.35rem;
-  font-family: 'Outfit', system-ui, sans-serif;
-  font-size: 0.92rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .nav-links a {
@@ -235,9 +235,9 @@ main {
 }
 
 .hero h1 {
-  font-size: clamp(2.15rem, 5.8vw, 3.35rem);
+  font-size: clamp(2rem, 5.2vw, 3rem);
   margin: 0 0 0.85rem;
-  max-width: 16ch;
+  max-width: 17ch;
   font-weight: 700;
 }
 
@@ -270,7 +270,7 @@ main {
 .btn {
   display: inline-block;
   padding: 0.7rem 1.25rem;
-  font-family: 'Figtree', system-ui, sans-serif;
+  font-family: 'Source Sans 3', system-ui, sans-serif;
   font-size: 1rem;
   text-decoration: none;
   border-radius: 4px;
@@ -400,7 +400,7 @@ section h2 {
 
 .compare th {
   background: #f0ece4;
-  font-family: 'Outfit', system-ui, sans-serif;
+  font-family: 'Libre Baskerville', Georgia, serif;
   font-weight: 600;
 }
 
@@ -493,14 +493,14 @@ section h2 {
 }
 
 .footer-brand-small {
-  font-family: 'Outfit', system-ui, sans-serif;
+  font-family: 'Libre Baskerville', Georgia, serif;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.02em;
 }
 
 .footer-brand-large {
-  font-family: 'Outfit', system-ui, sans-serif;
+  font-family: 'Libre Baskerville', Georgia, serif;
   font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -551,7 +551,7 @@ section h2 {
 }
 
 .footer-phone-note {
-  font-family: 'Figtree', system-ui, sans-serif;
+  font-family: 'Source Sans 3', system-ui, sans-serif;
   font-size: 0.72rem;
   opacity: 0.75;
   letter-spacing: 0.02em;
@@ -698,7 +698,7 @@ section h2 {
 .survey-lightbox-title {
   margin: 0;
   padding: 0.75rem 3rem 0.65rem 1rem;
-  font-family: 'Outfit', system-ui, sans-serif;
+  font-family: 'Libre Baskerville', Georgia, serif;
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--ink);
@@ -742,7 +742,7 @@ section h2 {
 
 .survey-figure figcaption strong {
   color: var(--ink);
-  font-family: 'Outfit', system-ui, sans-serif;
+  font-family: 'Libre Baskerville', Georgia, serif;
   font-weight: 600;
 }
 
@@ -775,7 +775,7 @@ section h2 {
 }
 
 .guides-list a {
-  font-family: 'Outfit', system-ui, sans-serif;
+  font-family: 'Libre Baskerville', Georgia, serif;
   font-size: 1.2rem;
   text-decoration: none;
   color: var(--ink);
