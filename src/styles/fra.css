@@ -242,23 +242,17 @@ main {
   max-width: 18ch;
 }
 
-.hero-visual {
-  margin: 0;
-}
-
-.hero-visual img {
-  display: block;
-  width: 100%;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  box-shadow: 0 12px 30px -18px rgb(0 0 0 / 0.35);
-}
-
-.hero-visual figcaption {
-  margin-top: 0.6rem;
-  font-size: 0.85rem;
+.hero-callout {
+  background: #f0ece4;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.95rem;
   color: var(--muted);
-  text-align: center;
+}
+
+.hero-callout p {
+  margin: 0;
 }
 
 .hero-eyebrow {
@@ -313,13 +307,6 @@ main {
 
 .btn-secondary:hover {
   border-color: var(--ink);
-}
-
-.hero-note {
-  margin-top: 1.25rem;
-  font-size: 0.92rem;
-  color: var(--muted);
-  max-width: 42ch;
 }
 
 /* Cards grid */
