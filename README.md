@@ -1,6 +1,6 @@
 # Foundation Repair Advocate
 
-Independent foundation second opinions and Pro Level floor elevation surveys for Arizona homeowners.
+Foundation second opinions and Pro Level floor elevation surveys for Arizona homeowners.
 
 Paid advocacy — not a pier company, not a free sales inspection. Built as a static Astro site for Cloudflare.
 
