@@ -14,7 +14,7 @@ const { title, description = '' } = Astro.props;
 const fullTitle = title.includes('Foundation Repair Advocate')
   ? title
   : `${title} — Foundation Repair Advocate`;
-const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, '') || 'https://foundationrepairadvocate.com';
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <!doctype html>
